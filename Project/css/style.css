@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/4-2-paint-brush-png-image.png');
+    background-size: cover;
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+#canvas {
+    width: 70%;
+    height: 25em;
+    border: black solid;
+    background-color: white;
+    margin-top: 6%;
+    margin-left: 15%;
+}
+
+.btn {
+    margin: 0.2em;
+}
+
+.rectangle {
+    border: 1px solid #FF0000;
+    position: absolute;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    width: 100%;
+}

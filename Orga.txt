@@ -1,0 +1,99 @@
+													
+													S2 – JavaScript Avancé
+
+															my_paint
+
+
+
+1 - Détails administratifs
+
+• Le projet est à réaliser seul.
+• Les sources doivent être rendues avec BLIH.
+• Répertoire de rendu : JavaScript_Avance_my_paint
+
+
+2 - Introduction
+
+	Ce projet consiste à réaliser un "paint-like" en JavaScript à l’aide du composant
+HTML5 "canvas". Votre projet devra au maximum avoir le look’n’feel d’une vraie application.
+
+
+3 - Restrictions
+
+	Pour réaliser ce projet, vous aurez le droit d’utiliser jQuery mais en aucun cas des plugins (ou
+aucune autre librairie).
+
+
+
+													Partie Obligatoire
+
+
+
+	Comme dans la plupart des logiciels de dessin, le dessin se fait à la souris, voyons quels
+outils de base nous allons implémenter.
+
+Outils de base :
+
+Il devra être possible de choisir via des menus différents outils :
+
+- Le "crayon" : outils de tracé libre qui dessine en suivant la souris tant que le bouton est enfoncé.
+- La "ligne" : un premier click pour l’origine, un deuxième pour la destination.
+- Le "rectangle" : un premier click pour le premier angle (coin du rectangle), un deuxième pour l’angle opposé.
+- Le cercle : un premier click pour le centre, un deuxième pour le rayon.
+- La gomme : à la façon du crayon, cet outil efface une zone de dessins.
+
+	Les deux derniers (rectangle et cercle), ces outils devront être disponibles en deux versions (rempli,
+et vide)
+	Pour chaque outil, il devra être possible de changer l’épaisseur du trait.
+
+De la couleur :
+
+	Comme dans tous logiciels de dessin, il devra également être possible de changer la couleur
+de votre tracé : un menu proposera une palette proposant visuellement à minima 64 teintes
+répartie sur tout le spectre, mais aussi la possibilité de saisir des valeurs RGB ou HSL (le choix doit
+être disponible pour l’utilisateur finale de votre application)
+
+Edition et Sauvegarde :
+
+	Enfin votre application devra permettre de sauvegarder le dessin en cours (« enregistrer sous
+... »), ou d’en ouvrir un, existant sur votre machine (PNG, ou JPEG), soit via une boite de dialogue «
+Parcourir », soit en cliquant glissant le fichier de votre explorateur de fichier sur la zone de dessin
+(dans votre navigateur).
+
+														Bonus
+
+
+
+	Nous allons rajouter des fonctionnalités et des outils qui vont faire de votre my_paint,
+un outil de dessin plus ludique.
+
+Outil dessins symétriques :
+
+	En sélectionnant ce mode de dessin, votre zone de travail sera divisée en 2 parties
+égales (séparation horizontale ou verticale, pourquoi pas au choix de l’utilisateur)
+Quand un tracé se fait dans l’une des zone (quelques soit l’outil utilisé), dans l’autre zone sera
+automatiquement dessiné (et en temps réel) avec un tracé symétrique (symétrie selon l’axe
+qui sépare les 2 zones).
+
+Outils calques :
+
+	Cette outils devra permettre à l’utilisateur de dessiner sur des calques indépendant les
+uns des autres, en terme de tracé mais empilable (sur un calque, une zone non dessinée sera
+transparente, et laissera apparaitre les dessins fait sur les calques inférieurs).
+On devra pouvoir réordonner et afficher / cacher des calques.
+Un dessin comportant plusieurs calques sera « aplati » avant d’être enregistré.
+Mega Bonus : implémentez un format de fichier permettant d’enregistrer votre image tout en
+conservant l’information « des calques » pour permettre d’éditer plus tard votre dessin en le
+(ré)ouvrant dans votre application.
+
+Outils dessin collaboratif :
+
+	Il peut être parfois utile de réfléchir à plusieurs, vous implémenterez donc un mode «
+à plusieurs sur un même dessin » (via plusieurs terminaux).
+Chaque personne connectée sur le même dessin verra en directe les tracés effectués par
+les autres utilisateurs.
+
+Première étape : la fonctionnalité de dessin collaboratif doit être disponible, mais les outils avancés :
+(dessins symétriques et calques), seront désactivé (pour ce mode uniquement)
+
+Deuxième étape : toutes les fonctionnalités sont disponibles en même temps.
